@@ -16,4 +16,7 @@ class Project extends Model
         'start_date',
         'end_date'
     ];
+    public function types(){
+        return $this -> hasMany(Type :: class);
+    }
 }
