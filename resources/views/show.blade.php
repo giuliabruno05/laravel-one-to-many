@@ -8,4 +8,12 @@
     <span class="badge rounded-pill text-bg-success">Start date: {{ $project -> start_date }}</span><br>
     <span class="badge rounded-pill text-bg-danger">Start end: {{ $project -> end_date }}</span>
 </div>
+    <ul>
+        @foreach ($project -> types as $type)
+            <li>{{$type -> kind}}</li>
+            <li>{{$type -> funding}}</li>
+            <li>{{$type -> timing}}</li>
+        @endforeach
+    </ul>
+
 @endsection
