@@ -11,12 +11,11 @@ class Type extends Model
     protected $filliable = [
         'timing',
         'funding',
-        'kind',
-        'project_id'
+        'kind'
         
     ];
-    public function project (){
-        return $this -> belongsTo(Project :: class);
+    public function projects (){
+        return $this -> hasMany(Project :: class);
     }
 }
 

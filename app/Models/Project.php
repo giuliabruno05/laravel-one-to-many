@@ -14,9 +14,10 @@ class Project extends Model
         'name',
         'description',
         'start_date',
-        'end_date'
+        'end_date',
+        'type_id'
     ];
-    public function types(){
-        return $this -> hasMany(Type :: class);
+    public function type(){
+        return $this -> belongsTo(Type :: class);
     }
 }
