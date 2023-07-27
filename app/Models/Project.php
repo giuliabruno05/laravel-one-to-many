@@ -13,9 +13,11 @@ class Project extends Model
     protected $filliable = [
         'name',
         'description',
+        'img',
         'start_date',
         'end_date',
         'type_id'
+        
     ];
     public function type(){
         return $this -> belongsTo(Type :: class);
