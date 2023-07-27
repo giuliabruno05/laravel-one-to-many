@@ -21,9 +21,9 @@ class ProjectTableSeeder extends Seeder
 
       foreach($projects as $project){
 
-            $type = Type :: inRandomOrder()-> first();
-            $project -> type_id = $type -> id ;
-            $project -> save();
+        $type = Type :: inRandomOrder()-> first();
+        $project -> type_id = $type -> id ;
+        $project -> save();
       }
     }
 }

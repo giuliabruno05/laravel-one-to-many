@@ -10,14 +10,13 @@ class Project extends Model
 {
     use HasFactory;
 
-    protected $filliable = [
+    protected $fillable = [
         'name',
         'description',
-        'img',
+        'image',
         'start_date',
         'end_date',
         'type_id'
-        
     ];
     public function type(){
         return $this -> belongsTo(Type :: class);

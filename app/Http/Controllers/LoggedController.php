@@ -21,7 +21,6 @@ class LoggedController extends Controller
         
         $data = $request -> all();
         $project = Project :: create($data);
-        
         return redirect() -> route('project.show', $project -> id);
     }
 }

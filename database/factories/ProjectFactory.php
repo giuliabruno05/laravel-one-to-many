@@ -21,7 +21,7 @@ class ProjectFactory extends Factory
             'description' => fake() -> paragraph (),
             'start_date' => fake() -> date(),
             'end_date' => fake() -> date(),
-            'img' => "https://picsum.photos/400/200"
+            'image' => "https://picsum.photos/400/200"
         ];
     }
 }
